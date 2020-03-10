@@ -5,10 +5,9 @@ import { LocalizeRouterSettings } from '../src/localize-router.config';
 import { LocalizeRouterModule } from '../src/localize-router.module';
 import { getTestBed, TestBed, fakeAsync, tick } from '@angular/core/testing';
 import { Routes, Router, Event, NavigationStart, NavigationEnd } from '@angular/router';
-import { Observable, Subject } from 'rxjs';
+import { Observable, Subject ,  of as ObservableOf } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 import { CommonModule, Location } from '@angular/common';
-import { of as ObservableOf } from 'rxjs';
 
 class FakeTranslateService {
   defLang: string;
